@@ -1,4 +1,4 @@
-import { Building2, ArrowUpRight, Plus } from "lucide-react"
+import { Crown, ArrowUpRight, Plus } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 
@@ -13,11 +13,11 @@ export function LinkAccountsCard() {
   return (
     <div className="rounded-2xl bg-[#141414] border border-[#262626] p-6 flex flex-col">
       <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#1f1f1f] border border-[#2a2a2a]">
-        <Building2 className="h-5 w-5 text-gray-400" />
+        <Crown className="h-5 w-5 text-yellow-400" />
       </div>
 
-      <h3 className="mb-2 text-lg font-semibold text-white">Объедините все счета</h3>
-      <p className="mb-4 text-sm text-gray-400">Подключите банки, кошельки и карты, чтобы видеть все балансы в одном окне</p>
+      <h3 className="mb-2 text-lg font-semibold text-white">Лучшая администрация</h3>
+      <p className="mb-4 text-sm text-gray-400">Вы можете стать администрацией, просто напишите нам в лс и мы проведем небольшой тест</p>
 
       <a href="#" className="mb-6 inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
         Подробнее <ArrowUpRight className="ml-1 h-4 w-4" />
