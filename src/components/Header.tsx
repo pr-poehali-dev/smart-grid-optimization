@@ -11,17 +11,7 @@ export function Header() {
         </span>
       </div>
 
-      <nav className="hidden md:flex items-center gap-8">
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          О нас
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Сообщество
-        </a>
-        <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Правила
-        </a>
-      </nav>
+
 
       <Button
         variant="outline"
