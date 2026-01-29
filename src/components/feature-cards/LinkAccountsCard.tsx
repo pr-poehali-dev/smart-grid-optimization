@@ -18,43 +18,6 @@ export function LinkAccountsCard() {
 
       <h3 className="mb-2 text-lg font-semibold text-white">Лучшая администрация</h3>
       <p className="mb-4 text-sm text-gray-400">Вы можете стать администрацией, просто напишите нам в лс и мы проведем небольшой тест</p>
-
-      <a href="#" className="mb-6 inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
-        Подробнее <ArrowUpRight className="ml-1 h-4 w-4" />
-      </a>
-
-      <div className="mt-auto space-y-2 rounded-xl bg-[#1a1a1a] border border-[#262626] p-3">
-        {recipients.map((recipient, index) => (
-          <div key={index} className="flex items-center justify-between rounded-lg bg-[#0f0f0f] px-3 py-2">
-            <div className="flex items-center gap-3">
-              <Avatar className="h-9 w-9">
-                {recipient.image ? (
-                  <AvatarImage src={recipient.image || "/placeholder.svg"} alt={recipient.name} />
-                ) : null}
-                <AvatarFallback className={`${recipient.color || "bg-gray-600"} text-white text-xs`}>
-                  {recipient.initials ||
-                    recipient.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
-                </AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="text-sm font-medium text-white">{recipient.name}</p>
-                <p className="text-xs text-gray-500">{recipient.info}</p>
-              </div>
-            </div>
-            <span className="text-xs text-gray-500">{recipient.code}</span>
-          </div>
-        ))}
-
-        <Button
-          variant="ghost"
-          className="w-full justify-center text-gray-500 hover:text-white hover:bg-[#1f1f1f] mt-2"
-        >
-          <Plus className="mr-2 h-4 w-4" /> Новый получатель
-        </Button>
-      </div>
     </div>
   )
 }
